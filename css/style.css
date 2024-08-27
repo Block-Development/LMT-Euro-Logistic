@@ -588,6 +588,14 @@ img {
 }
 
 
+/* Fahrer */
+
+.driverCount {
+    font-family: 'Helvetica';
+    color: #fff;
+}
+
+
 /* Buttons */
 
 .buttons {
