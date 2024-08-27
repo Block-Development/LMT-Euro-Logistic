@@ -15,14 +15,16 @@ fetch(membersAPI)
                 let user = driver;
 
                 div.innerHTML += `<div class="col-sm-4">
-                                        <div class="members">
-                                          <div class="overlay"></div>
-                                          <img class="img-responsive" src="https://lmt-euro-logistic.netlify.app/cdn/logo.png" alt="${user.username}">
-                                        </div>
-                                        <div class="members-content">
-                                          <h3>${user.username}</h3>
-                                        </div>
-                                      </div>`;
+                                    <div class="members">
+                                      <div class="members-img">
+                                        <div class="overlay"></div>
+                                        <img class="img-responsive" src="https://lmt-euro-logistic.netlify.app/cdn/logo.png" alt="${user.username}">
+                                      </div>
+                                      <div class="members-content">
+                                        <h3>${user.username}</h3><span>${user.joinDate}</span>
+                                      </div>
+                                    </div>
+                                  </div>`;
 
                 document.querySelector('.drivers-area').appendChild(div);
             }
