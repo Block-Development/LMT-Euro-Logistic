@@ -27,11 +27,14 @@ fetch(membersAPI)
                 fetch(userAPI + driver.user_id)
                   .then((response) => response.json())
                   .then((json) => {
+                    let defaultAvatar = 'https://static.truckersmp.com/avatarsN/defaultavatar.png'
+                    let lmtAvatar = 'https://lmt-euro-logistic.netlify.app/cdn/logo.png'
+
                     let fetchAvatar = json.response.avatar;
                     let driverAvatar = String(fetchAvatar)
-                      .replace('https://static.truckersmp.com/avatarsN/defaultavatar.png', 'https://lmt-euro-logistic.netlify.app/cdn/logo.png')
-                      .replace('https://static.truckersmp.com/avatarsN/4782497.1712159810.png', 'https://lmt-euro-logistic.netlify.app/cdn/logo.png')
-                      .replace('https://static.truckersmp.com/avatarsN/4192502.1713206807.png', 'https://lmt-euro-logistic.netlify.app/cdn/logo.png')
+                      .replace(defaultAvatar, lmtAvatar)
+                      .replace('https://static.truckersmp.com/avatarsN/4782497.1712159810.png', lmtAvatar)
+                      .replace('https://static.truckersmp.com/avatarsN/4192502.1713206807.png', lmtAvatar)
 
                     div.innerHTML += `<div class="col-sm-4">
                                     <div class="members">
