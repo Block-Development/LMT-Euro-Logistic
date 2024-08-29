@@ -1,5 +1,10 @@
-const membersAPI = 'https://corsproxy.io/?' + encodeURIComponent('https://api.truckersmp.com/v2/vtc/73403/members')
+
+/*
+    Coded by InfoBlock
+*/
+
 const vtcAPI = 'https://corsproxy.io/?' + encodeURIComponent('https://api.truckersmp.com/v2/vtc/73403')
+const membersAPI = 'https://corsproxy.io/?' + encodeURIComponent('https://api.truckersmp.com/v2/vtc/73403/members')
 const userAPI = 'https://corsproxy.io/?' + encodeURIComponent('https://api.truckersmp.com/v2/player/')
 
 const driversArea = document.querySelector('.drivers-area');
@@ -40,7 +45,7 @@ fetch(membersAPI)
                                     <div class="members">
                                       <div class="members-img">
                                         <div class="overlay"></div>
-                                        <img class="img-responsive" src="${driverAvatar}" alt="${driver.username}">
+                                        <img class="img-responsive" src="${lmtAvatar}" alt="${driver.username}">
                                       </div>
                                       <div class="members-content">
                                         <h3><a href="https://truckersmp.com/user/${driver.user_id}" target="_blank">${driver.username}</a></h3><span>${driver.joinDate}</span>
