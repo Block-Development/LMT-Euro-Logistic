@@ -38,7 +38,6 @@ fetch(membersAPI)
                     let driverAvatar = String(fetchAvatar)
                       .replace(defaultAvatar, lmtAvatar)
                       .replace('https://static.truckersmp.com/avatarsN/4782497.1712159810.png', lmtAvatar)
-                      .replace('https://static.truckersmp.com/avatarsN/4192502.1713206807.png', lmtAvatar)
 
                     div.innerHTML += `<div class="col-sm-4">
                                     <div class="members">
